@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --wrapper-width: 1260px;
+  --yellow-color: #fff15b;
+  --blue-color: #042c6c;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.App {
+  width: 100%;
+}
