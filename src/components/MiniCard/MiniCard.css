@@ -1,0 +1,29 @@
+.mini-card {
+  text-align: left;
+  background-color: white;
+  color: black;
+  min-height: 370px;
+  max-width: 220px;
+  box-shadow: 1px 0px 54px -20px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 54px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 54px -20px rgba(0, 0, 0, 0.75);
+}
+.mini-card > .mini-card-img {
+  width: 220px;
+  height: 220px;
+  border-bottom: 1px solid var(--main-content-bg-color);
+}
+
+.mini-card > .mini-card-price-span,
+.mini-card > .mini-card-item-description {
+  margin: 0.7rem;
+  margin-right: 0;
+}
+
+.mini-card > .mini-card-price-span {
+  font-size: 1.3rem;
+}
+
+.mini-card > .mini-card-item-description {
+  font-size: 0.8rem;
+}

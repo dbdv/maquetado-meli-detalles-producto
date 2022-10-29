@@ -4,16 +4,39 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: var(--main-content-bg-color);
+  color: black;
+}
+
+p,
+span,
+svg,
+ul,
+li,
+a,
+a > div,
+img {
+  background: transparent;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  border: none;
 }
 
 :root {
   --wrapper-width: 1200px;
   --yellow-color: #fff15b;
   --blue-color: #042c6c;
+  --blue-tone-color: #3483fa;
   --more-info-color: #f7f7f7;
   --more-info-text-color: #aaa8a8;
   --main-content-bg-color: #ededed;
   --accent-text-color: #333333;
+  --mini-img-width: 220px;
 }
 
 #root {

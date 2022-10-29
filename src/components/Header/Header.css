@@ -14,6 +14,14 @@
 .wrapper_header {
   width: 100%;
   max-width: var(--wrapper-width);
+  background-color: var(--yellow-color) !important;
+}
+
+.wrapper_header > div,
+.wrapper_header > div > div,
+.wrapper_header > div > div > div,
+.wrapper_header > div > div > ul > li > div {
+  background: transparent;
 }
 
 .top_header,
@@ -95,6 +103,7 @@ ul {
 .user_data_nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profile-icon,

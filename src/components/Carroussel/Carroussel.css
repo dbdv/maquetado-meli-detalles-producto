@@ -1,0 +1,63 @@
+.wrapper-carroussel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.wrapper-carroussel > .carroussel {
+  width: 100%;
+  max-width: var(--wrapper-width);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+}
+.wrapper-carroussel > .carroussel > .carroussel-topic {
+  font-size: 1.3rem;
+}
+
+.wrapper-carroussel > .carroussel > .outer-products {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-carroussel > .carroussel > .outer-products > .wrapper-products {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.wrapper-carroussel > .carroussel > .outer-products > .wrapper-icon-arrow {
+  font-size: 2.4rem;
+  border-radius: 100%;
+  padding: 0.8rem;
+  background-color: white;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  color: var(--blue-tone-color) !important;
+}
+.wrapper-carroussel
+  > .carroussel
+  > .outer-products
+  > .wrapper-icon-arrow
+  > .icon {
+  color: var(--blue-tone-color) !important;
+}
+
+.wrapper-carroussel
+  > .carroussel
+  > .outer-products
+  > .wrapper-icon-arrow
+  > .backArrow {
+  left: -40px;
+}
+.wrapper-carroussel > .carroussel > .outer-products > .forwardArrow {
+  right: -40px;
+}
+
+.active {
+  display: block !important;
+}

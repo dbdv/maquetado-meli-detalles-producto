@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import PreFooter from "./components/PreFooter/PreFooter";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Carroussel from "./components/Carroussel/Carroussel";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <ProductDetails />
         <div className="fake-body"></div>
+        <Carroussel />
         <PreFooter />
         <Footer />
       </BrowserRouter>

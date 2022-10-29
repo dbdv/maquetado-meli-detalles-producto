@@ -1,5 +1,5 @@
 .footer {
-  background: white;
+  background: white !important;
   width: 100%;
 }
 
@@ -13,14 +13,18 @@
   font-size: 0.7rem;
   color: var(--accent-text-color);
   font-weight: 400;
+  background: white !important;
 }
 
 .copy-adress-div {
+  background: white !important;
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
   max-width: var(--wrapper-width);
-  color: var(--more-info-text-color);
   font-size: 0.7rem;
+}
+.copy-adress-div > span {
+  color: var(--more-info-text-color);
 }
