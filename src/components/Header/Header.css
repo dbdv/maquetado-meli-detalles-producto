@@ -3,7 +3,7 @@
   flex-direction: column;
   background: var(--yellow-color);
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   gap: 0.4rem;
   color: black;
   justify-content: center;
@@ -19,7 +19,11 @@
 .top_header,
 .bottom_header {
   display: flex;
+  align-items: center;
   gap: 2rem;
+}
+.bottom_header {
+  justify-content: space-between;
 }
 
 .first_section {
@@ -33,8 +37,8 @@
 }
 
 .logo {
-  width: 10rem;
-  height: auto;
+  width: auto;
+  max-height: 35px;
 }
 
 ul {
@@ -42,23 +46,27 @@ ul {
 }
 
 .ads {
-  max-height: 40px;
+  max-height: 35px;
   width: auto;
   margin: 0 2rem;
 }
 
-.adress {
+.first_section > div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
 }
 
-.adress > div {
+.adress {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.adress > .text-adress-container {
   display: flex;
   flex-direction: column;
-  font-size: 0.8rem;
-  justify-content: center;
+  text-align: left;
+  line-height: 1rem;
 }
 
 .adress > div > span {
@@ -68,7 +76,6 @@ ul {
 .adress_user_name {
   font-size: 0.7rem;
   color: grey;
-  text-align: start;
   padding: 0;
   margin: 0;
 }
@@ -88,4 +95,10 @@ ul {
 .user_data_nav {
   display: flex;
   justify-content: space-between;
+}
+
+.profile-icon,
+.notification-icon,
+.cart-icon {
+  font-size: 1.5rem;
 }

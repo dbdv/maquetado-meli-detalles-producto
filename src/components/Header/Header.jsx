@@ -1,7 +1,11 @@
 import Search_bar from "../search_bar/Search_bar";
 import { GrLocation } from "react-icons/gr";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { BsCart2 } from "react-icons/bs";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -9,21 +13,21 @@ export function Header() {
       <div className="wrapper_header">
         <div className="top_header">
           <div className="first_section">
-            <a href="#">
+            <Link to="#">
               <img src="../../public/logo.png" alt="" className="logo" />
-            </a>
+            </Link>
           </div>
           <div className="second_section">
             <Search_bar />
           </div>
           <div className="third_section">
-            <img src="../../public/publicidad.png" alt="" className="ads" />
+            <img src="/publicidad.png" alt="" className="ads" />
           </div>
         </div>
         <div className="bottom_header">
           <div className="first_section adress">
             <GrLocation className="location_icon" />
-            <div>
+            <div className="text-adress-container">
               <span className="adress_user_name">Enviar a user</span>
               <span>General Paz 1500</span>
             </div>
@@ -47,21 +51,27 @@ export function Header() {
             </ul>
           </div>
           <div className="third_section user_data_nav">
-            <a to="#profile">
-              <div>Profile</div>
-            </a>
-            <a to="#compras">
+            <Link to="#profile">
+              <div>
+                <CgProfile className="profile-icon" /> Daniel Bus...
+              </div>
+            </Link>
+            <Link to="#compras">
               <span>Mis compras</span>
-            </a>
-            <a to="#favorites">
+            </Link>
+            <Link to="#favorites">
               <span>Favoritos</span>
-            </a>
-            <a to="#notifications">
-              <span>Notif...</span>
-            </a>
-            <a to="#cart">
-              <span>Cart</span>
-            </a>
+            </Link>
+            <Link to="#notifications">
+              <span>
+                <IoIosNotificationsOutline className="notification-icon" />
+              </span>
+            </Link>
+            <Link to="#cart">
+              <span>
+                <BsCart2 className="cart-icon" />
+              </span>
+            </Link>
           </div>
         </div>
       </div>

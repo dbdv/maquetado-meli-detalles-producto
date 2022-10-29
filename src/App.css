@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-  --wrapper-width: 1260px;
+  --wrapper-width: 1200px;
   --yellow-color: #fff15b;
   --blue-color: #042c6c;
+  --more-info-color: #f7f7f7;
+  --more-info-text-color: #aaa8a8;
+  --main-content-bg-color: #ededed;
+  --accent-text-color: #333333;
 }
 
 #root {
@@ -19,4 +25,8 @@
 
 .App {
   width: 100%;
+}
+
+.fake-body {
+  height: 315px;
 }

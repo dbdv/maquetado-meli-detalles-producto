@@ -1,0 +1,35 @@
+.wrapper-topic-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-topic-nav > .topic-nav {
+  width: 100%;
+  max-width: var(--wrapper-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.8rem;
+}
+
+.wrapper-topic-nav > .topic-nav > .suggestion {
+  margin: 1rem 0;
+}
+.wrapper-topic-nav > .topic-nav > .second-sec {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapper-topic-nav > .topic-nav > .second-sec > .categories-tree,
+.wrapper-topic-nav > .topic-nav > .second-sec > .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.divider {
+  margin: 0 0.2rem;
+}
