@@ -1,11 +1,28 @@
 import { IoIosArrowDown } from "react-icons/io";
 import "./OpinionSection.css";
+import ReviewMessage from "./ReviewMessage/ReviewMessage";
 
 export default function OpinionSection() {
   const toggleOptions = (idOption) => {
     const element = document.querySelector(`#${idOption}`);
     element.classList.toggle("active");
   };
+
+  const testReview = {
+    stars: 2,
+    date: "22 jul. 2021",
+    comment:
+      "El peluche la verdad es muy parecido al de las fotos, pero ami me vino todo descosido, al otro día de comprarlo ya estaba roto, la verdad mis peores 900 pesos, no vale la pena.",
+    usefulCount: 4,
+    unusefulCount: 0,
+  };
+
+  const testReviews = [];
+
+  for (let index = 0; index < 3; index++) {
+    testReviews.push(<ReviewMessage review={testReview} />);
+  }
+
   return (
     <div className="opinion-section">
       <div className="opinion-section-first">
@@ -60,6 +77,7 @@ export default function OpinionSection() {
               </div>
             </div>
           </div>
+          <div>{testReviews}</div>
         </div>
       </div>
     </div>

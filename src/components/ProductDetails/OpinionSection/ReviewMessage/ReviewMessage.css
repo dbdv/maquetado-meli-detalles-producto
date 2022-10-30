@@ -1,0 +1,41 @@
+.review-message {
+  width: 440px;
+  background: white;
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.review-message > div {
+  background-color: white;
+}
+
+.review-message > .review-message-calification-and-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.review-message > .review-message-calification-and-date > div {
+  background-color: white;
+}
+
+.review-message > .review-message-buttons > .review-message-usefulness {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+}
+.review-message
+  > .review-message-buttons
+  > .review-message-usefulness
+  > .button {
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--more-info-text-color);
+  border-radius: 100px;
+}
