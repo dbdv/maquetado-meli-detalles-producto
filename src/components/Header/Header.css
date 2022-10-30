@@ -5,7 +5,7 @@
   width: 100%;
   padding: 0.5rem 0;
   gap: 0.4rem;
-  color: black;
+  color: var(--more-info-text-color) !important;
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
@@ -96,7 +96,7 @@ ul {
 .nav_links {
   display: flex;
   text-align: left;
-  color: gray;
+  color: var(--more-info-text-color);
   gap: 1rem;
 }
 
@@ -110,4 +110,20 @@ ul {
 .notification-icon,
 .cart-icon {
   font-size: 1.5rem;
+}
+ul,
+li,
+li > div > span {
+  color: var(--accent-text-color);
+}
+
+.nav_links > li > div {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }

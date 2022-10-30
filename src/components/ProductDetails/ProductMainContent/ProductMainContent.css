@@ -1,11 +1,21 @@
-.mainContentWrapper {
+.wrapper-main-content {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.mainContentWrapper > .productMainContent {
+.wrapper-main-content > .product-main-content {
   width: var(--wrapper-width);
   background-color: white;
-  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.aside-temp {
+  width: 355px;
+  background: blue;
+  padding: 1rem;
+  margin: 1rem;
 }

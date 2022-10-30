@@ -9,6 +9,10 @@
 }
 
 p,
+h1,
+h2,
+h3,
+h4,
 span,
 svg,
 ul,
@@ -27,6 +31,14 @@ button:hover {
   border: none;
 }
 
+span,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
 :root {
   --wrapper-width: 1200px;
   --yellow-color: #fff15b;
@@ -43,7 +55,7 @@ button:hover {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .App {

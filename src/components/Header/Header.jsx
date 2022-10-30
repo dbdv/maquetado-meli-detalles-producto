@@ -52,8 +52,9 @@ export function Header() {
           </div>
           <div className="third_section user_data_nav">
             <Link to="#profile">
-              <div>
-                <CgProfile className="profile-icon" /> Daniel Bus...
+              <div className="profile">
+                <CgProfile className="profile-icon" />
+                <span> Daniel Bus...</span>
               </div>
             </Link>
             <Link to="#compras">
