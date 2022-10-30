@@ -1,4 +1,5 @@
 import "./TopicNavigation.css";
+import { Link } from "react-router-dom";
 
 export default function TopicNavigation() {
   return (
@@ -14,14 +15,22 @@ export default function TopicNavigation() {
           <div className="categories-tree">
             <span>Volver al listado</span>
             <span className="divider">|</span>
-            <span>Juegos y Juguetes</span>
+            <span>
+              <Link>Juegos y Juguetes</Link>
+            </span>
             <span>{">"}</span>
-            <span>Peluches</span>
+            <span>
+              <Link>Peluches</Link>
+            </span>
           </div>
           <div className="actions">
-            <span>Compartir</span>
+            <span>
+              <Link>Compartir</Link>
+            </span>
             <span className="divider">|</span>
-            <span>Vender uno igual</span>
+            <span>
+              <Link>Vender uno igual</Link>
+            </span>
           </div>
         </div>
       </div>

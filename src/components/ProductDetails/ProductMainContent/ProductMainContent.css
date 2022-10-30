@@ -1,0 +1,11 @@
+.mainContentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContentWrapper > .productMainContent {
+  width: var(--wrapper-width);
+  background-color: white;
+  height: 10px;
+}

@@ -20,6 +20,8 @@
 .search_bar > button {
   background: none;
   color: gray;
+  display: flex;
+  align-items: center;
 }
 .search_bar > .search-input {
   padding-left: 1rem;

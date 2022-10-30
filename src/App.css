@@ -53,3 +53,10 @@ button:hover {
 .fake-body {
   height: 315px;
 }
+
+.promo-test {
+  max-width: 1200px;
+  height: auto;
+  object-fit: scale-down;
+  margin: 2rem 0;
+}

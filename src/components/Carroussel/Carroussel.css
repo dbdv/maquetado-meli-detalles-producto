@@ -16,6 +16,13 @@
 }
 .wrapper-carroussel > .carroussel > .carroussel-topic {
   font-size: 1.3rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.wrapper-carroussel > .carroussel > .carroussel-topic > a {
+  font-size: 0.9rem;
 }
 
 .wrapper-carroussel > .carroussel > .outer-products {
@@ -47,12 +54,8 @@
   color: var(--blue-tone-color) !important;
 }
 
-.wrapper-carroussel
-  > .carroussel
-  > .outer-products
-  > .wrapper-icon-arrow
-  > .backArrow {
-  left: -40px;
+.wrapper-carroussel > .carroussel > .outer-products > .backArrow {
+  left: -35px;
 }
 .wrapper-carroussel > .carroussel > .outer-products > .forwardArrow {
   right: -40px;

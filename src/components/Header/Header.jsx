@@ -28,7 +28,7 @@ export function Header() {
           <div className="first_section adress">
             <GrLocation className="location_icon" />
             <div className="text-adress-container">
-              <span className="adress_user_name">Enviar a user</span>
+              <span className="adress_user_name">Enviar a Daniel</span>
               <span>General Paz 1500</span>
             </div>
           </div>

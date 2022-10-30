@@ -1,0 +1,25 @@
+.product-id-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-id-banner > .product-id {
+  width: var(--wrapper-width);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: end;
+}
+
+.product-id-banner > .product-id > .product-number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+.product-id-banner > .product-id > .product-number > span {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <ProductDetails />
-        <div className="fake-body"></div>
-        <Carroussel />
+
+        <img src="/afaPromoIMG.jpg" alt="" className="promo-test" />
         <PreFooter />
         <Footer />
       </BrowserRouter>
