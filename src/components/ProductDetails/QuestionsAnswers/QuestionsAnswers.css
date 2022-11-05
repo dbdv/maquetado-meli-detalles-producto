@@ -1,0 +1,67 @@
+.questions-answers > div > div,
+.questions-answers > div,
+.questions-answers {
+  width: 100%;
+  background-color: white;
+}
+
+.questions-answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  padding: 2.5rem;
+  gap: 2rem;
+}
+.questions-answers > .questions-answers-add-question > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.questions-answers > .questions-answers-add-question > div > input {
+  background: none;
+  padding: 0.8rem;
+  width: 550px;
+  border: 1px solid var(--more-info-text-color);
+  font-size: 0.9rem;
+  border-radius: 7px;
+  color: var(--more-info-text-color);
+}
+
+.questions-answers > .questions-answers-add-question > div > button {
+  border: none;
+  background: none;
+  background-color: var(--blue-tone-color);
+  color: white;
+  font-weight: 400;
+  padding: 0.8rem 2rem;
+}
+
+.questions-answers
+  > .questions-answers-frequently-asked
+  > .questions-answers-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.questions-answers
+  > .questions-answers-frequently-asked
+  > .questions-answers-suggestions
+  > span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  color: var(--blue-tone-color);
+  border-radius: 5px;
+  background-color: var(--second-blue-color);
+}
+
+.questions-answers > .questions-answers-title > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.questions-answers > div > h4 {
+  font-weight: 500;
+}

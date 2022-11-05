@@ -1,4 +1,5 @@
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 import "./OpinionSection.css";
 import ReviewMessage from "./ReviewMessage/ReviewMessage";
 
@@ -78,6 +79,11 @@ export default function OpinionSection() {
             </div>
           </div>
           <div>{testReviews}</div>
+          <div className="opinion-section-see-all">
+            <Link rel="stylesheet" href="">
+              Ver todas las opiniones
+            </Link>
+          </div>
         </div>
       </div>
     </div>

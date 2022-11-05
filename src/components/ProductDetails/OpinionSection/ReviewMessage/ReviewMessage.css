@@ -38,4 +38,31 @@
   padding: 0.5rem 0.65rem;
   border: 1px solid var(--more-info-text-color);
   border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.review-message
+  > .review-message-buttons
+  > .review-message-usefulness
+  > .button
+  > svg {
+  fill: unset;
+}
+
+.review-message
+  > .review-message-buttons
+  > .review-message-usefulness
+  > .button:hover {
+  background: var(--second-blue-color);
+  border: 1px solid var(--blue-tone-color);
+  color: var(--blue-tone-color) !important;
+  fill: var(--blue-tone-color);
+}
+
+.review-message
+  > .review-message-buttons
+  > .review-message-usefulness
+  > .button:hover
+  > span {
+  color: var(--blue-tone-color) !important;
 }

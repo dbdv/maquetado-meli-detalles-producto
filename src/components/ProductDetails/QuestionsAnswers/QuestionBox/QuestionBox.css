@@ -1,0 +1,29 @@
+.question-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.question-box > div,
+.question-box > div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.question-box > div > p,
+.question-box > div > svg,
+.question-box > div > span {
+  color: var(--more-info-text-color);
+  fill: var(--more-info-text-color);
+}
+
+.question-box > div > span {
+  margin-left: 1rem;
+}
+
+.question-box > div > .icon {
+  fill: red !important;
+  transform: rotate(-90deg);
+  align-self: flex-start;
+}

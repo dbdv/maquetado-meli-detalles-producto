@@ -4,10 +4,14 @@
   color: black;
   min-height: 370px;
   max-width: 220px;
-  box-shadow: 0px 0px 54px -50px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 54px -50px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 54px -50px rgba(0, 0, 0, 0.75);
 }
+
+.mini-card:hover {
+  box-shadow: 1px 9px 11px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 9px 11px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 9px 11px -7px rgba(0, 0, 0, 0.75);
+}
+
 .mini-card > .mini-card-img {
   width: 220px;
   height: 220px;

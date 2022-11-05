@@ -11,8 +11,8 @@ export default function ProductDetails() {
   return (
     <div>
       <TopicNavigation />
-      <ProductIdBanner product={product} />
       <ProductMainContent />
+      <ProductIdBanner product={product} />
       <Carroussel
         sectionTopic={"Productos promocionados"}
         link={"Anunciá acá"}

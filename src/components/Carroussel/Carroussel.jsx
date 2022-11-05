@@ -7,7 +7,7 @@ export default function Carroussel({ sectionTopic, link }) {
   const [startPosition, setStartPosition] = useState(0);
 
   const templateProduct = {
-    img: "/kenaiIMG.jpeg",
+    img: "/stichIMG.jpg",
     price: "1.605",
     description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
   };
