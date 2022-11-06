@@ -55,6 +55,7 @@
   color: var(--blue-tone-color);
   border-radius: 5px;
   background-color: var(--second-blue-color);
+  cursor: pointer;
 }
 
 .questions-answers > .questions-answers-title > h3 {
