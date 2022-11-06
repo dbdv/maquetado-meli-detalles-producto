@@ -1,0 +1,10 @@
+.divider-wrapper {
+  width: 94%;
+  margin: 1rem 2.5rem;
+  max-width: 800px;
+}
+
+.divider-wrapper > .divider {
+  background: var(--main-content-bg-color);
+  height: 1px;
+}

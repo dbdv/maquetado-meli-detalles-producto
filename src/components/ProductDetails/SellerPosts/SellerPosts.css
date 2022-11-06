@@ -1,0 +1,11 @@
+.seller-posts {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: left;
+  gap: 2rem;
+  padding: 2rem;
+}

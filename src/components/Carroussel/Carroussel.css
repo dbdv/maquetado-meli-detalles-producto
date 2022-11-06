@@ -4,6 +4,7 @@
   justify-content: center;
   position: relative;
   margin: 1rem 0;
+  transition: all 0.5s;
 }
 
 .wrapper-carroussel > .carroussel {
@@ -29,6 +30,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 
 .wrapper-carroussel > .carroussel > .outer-products > .wrapper-products {
@@ -40,11 +42,23 @@
   font-size: 2.4rem;
   border-radius: 100%;
   padding: 0.8rem;
-  background-color: white;
   position: absolute;
   display: none;
   cursor: pointer;
+  background: white;
   color: var(--blue-tone-color) !important;
+  transition: all 0.2s;
+  box-shadow: 1px 9px 11px -15px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 9px 11px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 9px 11px -15px rgba(0, 0, 0, 0.75);
+}
+.wrapper-carroussel
+  > .carroussel
+  > .outer-products
+  > .wrapper-icon-arrow:hover {
+  box-shadow: 1px 9px 11px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 9px 11px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 9px 11px -12px rgba(0, 0, 0, 0.75);
 }
 .wrapper-carroussel
   > .carroussel
@@ -63,4 +77,11 @@
 
 .active {
   display: block !important;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-gray {
 }

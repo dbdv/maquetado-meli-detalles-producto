@@ -16,12 +16,15 @@ export default function ProductDetails() {
       <Carroussel
         sectionTopic={"Productos promocionados"}
         link={"Anunciá acá"}
+        maxToShow={5}
       />
       <Carroussel
         sectionTopic={"Quienes vieron este producto también compraron"}
+        maxToShow={5}
       />
       <Carroussel
         sectionTopic={"Quienes compraron este producto también compraron"}
+        maxToShow={5}
       />
     </div>
   );

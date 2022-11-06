@@ -3,7 +3,12 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./Carroussel.css";
 import { useState } from "react";
 
-export default function Carroussel({ sectionTopic, link }) {
+export default function Carroussel({
+  sectionTopic,
+  link,
+  maxToShow,
+  bgWhite = false,
+}) {
   const [startPosition, setStartPosition] = useState(0);
 
   const templateProduct = {
@@ -26,22 +31,22 @@ export default function Carroussel({ sectionTopic, link }) {
   }
 
   const moveToLeft = () => {
-    if (startPosition > 0) setStartPosition((pos) => pos - 5);
+    if (startPosition > 0) setStartPosition((pos) => pos - maxToShow);
   };
 
   const moveToRight = () => {
     if (startPosition < testProducts.length - 1)
-      setStartPosition((pos) => pos + 5);
+      setStartPosition((pos) => pos + maxToShow);
   };
 
   return (
-    <div className="wrapper-carroussel">
-      <div className="carroussel">
+    <div className={`wrapper-carroussel ${bgWhite ? "bg-white" : ""}`}>
+      <div className={`carroussel ${bgWhite ? "bg-white" : ""}`}>
         <span className="carroussel-topic">
           {sectionTopic}
           {link && <a>{link}</a>}
         </span>
-        <div className="outer-products">
+        <div className={`outer-products ${bgWhite ? "bg-white" : ""}`}>
           <div
             onClick={() => moveToLeft()}
             className={`wrapper-icon-arrow backArrow ${
@@ -50,13 +55,13 @@ export default function Carroussel({ sectionTopic, link }) {
           >
             <IoIosArrowBack className="icon arrow-icon" />
           </div>
-          <div className="wrapper-products">
-            {testProducts.slice(startPosition, startPosition + 5)}
+          <div className={`wrapper-products ${bgWhite ? "bg-white" : ""}`}>
+            {testProducts.slice(startPosition, startPosition + maxToShow)}
           </div>
           <div
             onClick={() => moveToRight()}
             className={`wrapper-icon-arrow forwardArrow ${
-              startPosition + 5 < testProducts.length - 1 && "active"
+              startPosition + maxToShow < testProducts.length - 1 && "active"
             }`}
           >
             <IoIosArrowForward className="icon arrow-icon" />
