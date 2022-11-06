@@ -1,0 +1,36 @@
+.main-features {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: left;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.main-features > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.main-features > h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.main-features > .other-features {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #ffffff;
+  gap: 1rem;
+}
+.main-features > .other-features > span {
+  width: 48%;
+}
+.main-features > .other-features > span > strong {
+  background: #ffffff;
+}

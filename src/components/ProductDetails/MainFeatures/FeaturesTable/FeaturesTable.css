@@ -1,0 +1,48 @@
+.feat-table {
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.feat-table > tr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.feat-table > tr > td,
+.feat-table > tr > th {
+  padding: 1rem;
+}
+
+.feat-table > tr > th {
+  max-width: 12rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.feat-table > tr > td {
+  width: 100%;
+  font-weight: 300;
+}
+
+.feat-table > tr:nth-child(even) > th {
+  background: #f5f5f5;
+}
+
+.feat-table > tr:nth-child(odd) > th {
+  background: #ebebeb;
+}
+
+.feat-table > tr:nth-child(even) > td {
+  background: #ffffff;
+}
+
+.feat-table > tr:nth-child(odd) > td {
+  background: #f5f5f5;
+}
+
+.feat-table > tr > .title {
+  font-weight: 400;
+}
