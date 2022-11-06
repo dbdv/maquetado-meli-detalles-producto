@@ -9,7 +9,7 @@ export default function ProductDetails() {
   const product = { id: "925634878" };
 
   return (
-    <div>
+    <div className="product-detail">
       <TopicNavigation />
       <ProductMainContent />
       <ProductIdBanner product={product} />
