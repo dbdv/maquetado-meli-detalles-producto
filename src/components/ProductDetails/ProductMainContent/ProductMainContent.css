@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 1rem 0;
 }
@@ -11,7 +11,7 @@
   width: var(--wrapper-width);
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .wrapper-main-content > .product-main-content > div {
@@ -20,7 +20,14 @@
 
 .aside-temp {
   width: 355px;
-  background: blue;
-  padding: 1rem;
+  background: white;
   margin: 1rem;
+}
+
+.aside-temp > div {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(214, 210, 210, 0.548);
+  width: 100%;
+  background: white;
 }

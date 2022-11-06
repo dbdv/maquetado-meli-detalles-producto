@@ -6,9 +6,10 @@
   padding: 0.5rem 0;
   gap: 0.4rem;
   color: var(--more-info-text-color) !important;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 0.8rem;
+  min-height: 100px;
 }
 
 .wrapper_header {
@@ -68,6 +69,12 @@ ul {
   justify-content: left;
   align-items: center;
   gap: 0.5rem;
+  border: 1px solid var(--yellow-color);
+  border-radius: 3px;
+}
+
+.adress:hover {
+  border: 1px solid rgba(214, 210, 210, 0.548);
 }
 
 .adress > .text-adress-container {

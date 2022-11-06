@@ -1,0 +1,28 @@
+.promoted-products {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.promoted-products > .title {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.promoted-products > .title > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.promoted-products > .title > a {
+  font-size: 0.7rem;
+}
+.products-nano-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: white;
+}

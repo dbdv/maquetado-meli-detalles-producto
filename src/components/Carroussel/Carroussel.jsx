@@ -11,25 +11,58 @@ export default function Carroussel({
 }) {
   const [startPosition, setStartPosition] = useState(0);
 
-  const templateProduct = {
-    img: "/stichIMG.jpg",
-    price: "1.605",
-    description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
-  };
-
-  const testProducts = [];
-  for (let index = 0; index < 15; index++) {
-    const p = (
-      <MiniCard
-        key={index}
-        img={templateProduct.img}
-        price={templateProduct.price}
-        description={index + "-" + templateProduct.description}
-      />
-    );
-    testProducts.push(p);
-  }
-
+  const testProducts = [
+    {
+      img: "/stichIMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich2IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich3IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stichIMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich2IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich3IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stichIMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich2IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stich3IMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+    {
+      img: "/stichIMG.jpg",
+      price: "1.605",
+      description: "Peluche Stitch 20cm Importado Lilo Y Stitch Hermosos",
+    },
+  ];
   const moveToLeft = () => {
     if (startPosition > 0) setStartPosition((pos) => pos - maxToShow);
   };
@@ -56,7 +89,16 @@ export default function Carroussel({
             <IoIosArrowBack className="icon arrow-icon" />
           </div>
           <div className={`wrapper-products ${bgWhite ? "bg-white" : ""}`}>
-            {testProducts.slice(startPosition, startPosition + maxToShow)}
+            {testProducts
+              .slice(startPosition, startPosition + maxToShow)
+              .map((p, index) => (
+                <MiniCard
+                  key={index}
+                  img={p.img}
+                  price={p.price}
+                  description={index + "-" + p.description}
+                />
+              ))}
           </div>
           <div
             onClick={() => moveToRight()}

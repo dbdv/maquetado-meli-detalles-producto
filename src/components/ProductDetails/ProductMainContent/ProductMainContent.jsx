@@ -6,13 +6,14 @@ import MainFeatures from "../MainFeatures/MainFeatures";
 import SellerPosts from "../SellerPosts/SellerPosts";
 import Divider from "../../Divider/Divider";
 import Gallery from "../Gallery/Gallery";
+import PromotedProducts from "../PromotedProducts/PromotedProducts";
 
 export default function ProductMainContent() {
   const images = [
     {
       id: 0,
       alt: "",
-      url: "/kenaiIMG.jpeg",
+      url: "/stich2IMG.jpg",
     },
     {
       id: 1,
@@ -27,7 +28,7 @@ export default function ProductMainContent() {
     {
       id: 3,
       alt: "",
-      url: "/publicidad.png",
+      url: "/stich3IMG.jpg",
     },
   ];
   return (
@@ -45,7 +46,9 @@ export default function ProductMainContent() {
           <OpinionSection />
         </div>
         <div className="right">
-          <aside className="aside-temp"></aside>
+          <aside className="aside-temp">
+            <PromotedProducts />
+          </aside>
         </div>
       </div>
     </div>

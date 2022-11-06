@@ -1,0 +1,36 @@
+.nano-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  justify-content: center;
+}
+
+.nano-card > img {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid rgba(214, 210, 210, 0.548);
+  border-radius: 5px;
+}
+
+.nano-card > div {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+}
+.nano-card > div > h3 {
+  font-size: 1.2rem;
+}
+.nano-card > div > span {
+  color: green;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.nano-card > div > p {
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1rem;
+}

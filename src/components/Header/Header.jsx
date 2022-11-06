@@ -14,7 +14,7 @@ export function Header() {
         <div className="top_header">
           <div className="first_section">
             <Link to="#">
-              <img src="../../public/logo.png" alt="" className="logo" />
+              <img src="/logo.png" alt="" className="logo" />
             </Link>
           </div>
           <div className="second_section">
