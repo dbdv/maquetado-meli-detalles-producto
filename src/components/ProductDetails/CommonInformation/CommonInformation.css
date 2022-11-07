@@ -1,0 +1,44 @@
+.common-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-information > div {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: white;
+}
+.common-information > div:nth-child(2) {
+  margin: 0;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid rgba(214, 210, 210, 0.548);
+  border-bottom: 1px solid rgba(214, 210, 210, 0.548);
+}
+
+.common-information > div > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.common-information > div > div {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.common-information > div > div > span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.common-information > div > div > p {
+  font-size: 0.7rem;
+  color: var(--more-info-text-color);
+}
+
+.common-information > div > a {
+  font-size: 0.7rem;
+}

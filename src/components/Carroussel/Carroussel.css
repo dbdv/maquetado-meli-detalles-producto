@@ -69,10 +69,10 @@
 }
 
 .wrapper-carroussel > .carroussel > .outer-products > .backArrow {
-  left: -35px;
+  left: -30px;
 }
 .wrapper-carroussel > .carroussel > .outer-products > .forwardArrow {
-  right: -40px;
+  right: -30px;
 }
 
 .active {

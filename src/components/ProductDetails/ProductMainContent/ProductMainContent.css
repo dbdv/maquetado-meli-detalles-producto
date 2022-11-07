@@ -22,12 +22,22 @@
   width: 355px;
   background: white;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .aside-temp > div {
-  padding: 1rem;
-  border-radius: 10px;
   border: 1px solid rgba(214, 210, 210, 0.548);
   width: 100%;
   background: white;
+  text-align: left;
+  border-radius: 10px;
+}
+.aside-temp > div > div {
+  margin: 0 1rem;
+}
+
+.aside-temp > div:last-child {
+  border-bottom: 1px solid rgba(214, 210, 210, 0.548);
 }

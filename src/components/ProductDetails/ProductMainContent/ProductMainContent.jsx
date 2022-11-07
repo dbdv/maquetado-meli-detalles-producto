@@ -7,6 +7,7 @@ import SellerPosts from "../SellerPosts/SellerPosts";
 import Divider from "../../Divider/Divider";
 import Gallery from "../Gallery/Gallery";
 import PromotedProducts from "../PromotedProducts/PromotedProducts";
+import CommonInformation from "../CommonInformation/CommonInformation";
 
 export default function ProductMainContent() {
   const images = [
@@ -47,6 +48,7 @@ export default function ProductMainContent() {
         </div>
         <div className="right">
           <aside className="aside-temp">
+            <CommonInformation />
             <PromotedProducts />
           </aside>
         </div>

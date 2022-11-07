@@ -4,6 +4,8 @@
   color: black;
   min-height: 370px;
   max-width: 220px;
+  border: 1px solid rgba(214, 210, 210, 0.548);
+  border-radius: 5px;
 }
 
 .mini-card:hover {
@@ -13,8 +15,8 @@
 }
 
 .mini-card > .mini-card-img {
-  width: 220px;
-  height: 220px;
+  width: 216px;
+  height: 216px;
   border-bottom: 1px solid var(--main-content-bg-color);
 }
 
@@ -30,4 +32,8 @@
 
 .mini-card > .mini-card-item-description {
   font-size: 0.8rem;
+}
+
+.border {
+  border: 1px solid rgba(214, 210, 210, 0.548);
 }
