@@ -9,6 +9,7 @@ import Gallery from "../Gallery/Gallery";
 import PromotedProducts from "../PromotedProducts/PromotedProducts";
 import CommonInformation from "../CommonInformation/CommonInformation";
 import SellerInfo from "../SellerInfo/SellerInfo";
+import MercadoShops from "../MercadoShops/MercadoShops";
 
 export default function ProductMainContent() {
   const images = [
@@ -61,6 +62,7 @@ export default function ProductMainContent() {
             <SellerInfo sellerInfo={seller} />
             <CommonInformation />
             <PromotedProducts />
+            <MercadoShops />
           </aside>
         </div>
       </div>
