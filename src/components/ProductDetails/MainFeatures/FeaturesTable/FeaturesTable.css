@@ -5,44 +5,44 @@
   border-radius: 10px;
 }
 
-.feat-table > tr {
+.feat-table > tbody > tr {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
 }
 
-.feat-table > tr > td,
-.feat-table > tr > th {
+.feat-table > tbody > tr > td,
+.feat-table > tbody > tr > th {
   padding: 1rem;
 }
 
-.feat-table > tr > th {
+.feat-table > tbody > tr > th {
   max-width: 12rem;
   width: 100%;
   font-weight: bold;
 }
 
-.feat-table > tr > td {
+.feat-table > tbody > tr > td {
   width: 100%;
   font-weight: 300;
 }
 
-.feat-table > tr:nth-child(even) > th {
+.feat-table > tbody > tr:nth-child(even) > th {
   background: #f5f5f5;
 }
 
-.feat-table > tr:nth-child(odd) > th {
+.feat-table > tbody > tr:nth-child(odd) > th {
   background: #ebebeb;
 }
 
-.feat-table > tr:nth-child(even) > td {
+.feat-table > tbody > tr:nth-child(even) > td {
   background: #ffffff;
 }
 
-.feat-table > tr:nth-child(odd) > td {
+.feat-table > tbody > tr:nth-child(odd) > td {
   background: #f5f5f5;
 }
 
-.feat-table > tr > .title {
+.feat-table > tbody > tr > .title {
   font-weight: 400;
 }

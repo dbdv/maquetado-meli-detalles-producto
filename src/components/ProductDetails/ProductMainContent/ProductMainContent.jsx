@@ -8,6 +8,7 @@ import Divider from "../../Divider/Divider";
 import Gallery from "../Gallery/Gallery";
 import PromotedProducts from "../PromotedProducts/PromotedProducts";
 import CommonInformation from "../CommonInformation/CommonInformation";
+import SellerInfo from "../SellerInfo/SellerInfo";
 
 export default function ProductMainContent() {
   const images = [
@@ -32,6 +33,15 @@ export default function ProductMainContent() {
       url: "/stich3IMG.jpg",
     },
   ];
+
+  const seller = {
+    location: "Balvanera, Capital federal",
+    category: "MercadoLíder Platinum",
+    categoryCaption: "¡Es uno de los mejores del sitio!",
+    lastSales: 3978,
+    badges: ["Brinda buena atención", "Despacha sus productos a tiempo"],
+    score: "score-high",
+  };
   return (
     <div className="wrapper-main-content">
       <div className="product-main-content">
@@ -48,6 +58,7 @@ export default function ProductMainContent() {
         </div>
         <div className="right">
           <aside className="aside-temp">
+            <SellerInfo sellerInfo={seller} />
             <CommonInformation />
             <PromotedProducts />
           </aside>

@@ -60,7 +60,10 @@ export default function QuestionsAnswers() {
         <h4>Últimas realizadas</h4>
         <div>
           {testQuestions.map((tq) => (
-            <QuestionBox question={tq} />
+            <QuestionBox
+              key={tq.answer + tq.date + tq.question}
+              question={tq}
+            />
           ))}
         </div>
       </div>

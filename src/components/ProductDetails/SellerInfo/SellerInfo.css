@@ -1,0 +1,131 @@
+.seller-info,
+.seller-info > div,
+.seller-info > div > div {
+  background: white;
+}
+
+.seller-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  gap: 1.6rem;
+}
+
+.seller-info > div {
+  margin: 0 !important;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seller-info > a {
+  font-size: 0.7rem;
+}
+
+.seller-info > div > svg {
+  fill: green !important;
+}
+
+.seller-info > .seller-category > div > p,
+.seller-info > .seller-location > div > p {
+  color: var(--accent-text-color);
+}
+
+.seller-info > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.seller-info > .seller-location > div > span,
+.seller-info > .seller-category > div > span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.seller-info > .seller-category > div > span {
+  color: green;
+}
+
+.seller-info > .seller-location > div > p,
+.seller-info > .seller-category > div > p {
+  font-size: 0.7rem;
+}
+
+.seller-info > .sales-count-color {
+  align-items: center;
+}
+
+.seller-info > .sales-count-color > div {
+  width: 4rem;
+  height: 0.45rem;
+  opacity: 10%;
+}
+
+.seller-info > .sales-count-color > div:nth-child(1) {
+  background: red;
+}
+.seller-info > .sales-count-color > div:nth-child(2) {
+  background: orange;
+}
+.seller-info > .sales-count-color > div:nth-child(3) {
+  background: yellow;
+}
+.seller-info > .sales-count-color > div:nth-child(4) {
+  background: olivedrab;
+}
+.seller-info > .sales-count-color > div:nth-child(5) {
+  background: rgb(2, 153, 2);
+}
+.score-low > div:nth-child(1),
+.score-semi-low > div:nth-child(2),
+.score-medium > div:nth-child(3),
+.score-semi-high > div:nth-child(4),
+.score-high > div:nth-child(5) {
+  height: 0.7rem;
+  opacity: 100%;
+}
+
+.seller-info > .last-sales > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.seller-info > .last-sales > div > span,
+.seller-info > .last-sales > div > div {
+  font-size: 1.4rem;
+  font-weight: 400;
+  background: white;
+}
+
+.seller-info > .last-sales > div:nth-child(2),
+.seller-info > .last-sales > div:nth-child(3) {
+  position: relative;
+}
+
+.seller-info > .last-sales > div > div > svg:first-child,
+.seller-info > .last-sales > div > div > svg:first-child {
+  fill: var(--more-info-text-color);
+}
+
+.seller-info > .last-sales > div > div > svg:nth-child(2) {
+  position: absolute;
+  fill: rgb(2, 153, 2);
+  font-size: 0.9rem;
+  left: 40px;
+  bottom: 35px;
+}
+
+.seller-info > .last-sales > div:nth-child(3) > div > svg:nth-child(2) {
+  left: 60px;
+}
+
+.seller-info > .last-sales > div > p {
+  font-size: 0.6rem;
+  line-height: 0.8rem;
+}
+
+.seller-info > .last-sales > div:first-child {
+  border-right: 1px solid rgba(214, 210, 210, 0.548);
+}

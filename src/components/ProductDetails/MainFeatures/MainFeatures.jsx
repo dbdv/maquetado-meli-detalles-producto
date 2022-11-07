@@ -23,7 +23,7 @@ export default function MainFeatures() {
       <h4>Otras Características</h4>
       <div className="other-features">
         {otherFeatures.map((of) => (
-          <span>
+          <span key={of.title + of.description}>
             <strong>{of.title}: </strong>
             {of.description}
           </span>

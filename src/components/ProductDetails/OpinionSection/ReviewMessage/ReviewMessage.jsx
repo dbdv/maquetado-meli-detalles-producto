@@ -5,7 +5,9 @@ import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 export default function ReviewMessage({ review }) {
   const stars = [];
   for (let index = 0; index < 5; index++) {
-    stars.push(index < review.stars ? <BsStarFill /> : <BsStar />);
+    stars.push(
+      index < review.stars ? <BsStarFill key={index} /> : <BsStar key={index} />
+    );
   }
   return (
     <div className="review-message-wrapper">

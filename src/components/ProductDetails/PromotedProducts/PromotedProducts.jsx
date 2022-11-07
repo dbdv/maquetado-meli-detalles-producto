@@ -36,8 +36,8 @@ export default function PromotedProducts() {
         <Link>Anunciá acá</Link>
       </div>
       <div className="products-nano-cards">
-        {testProducts.map((tp) => (
-          <NanoCard key={tp.img} item={tp} />
+        {testProducts.map((tp, index) => (
+          <NanoCard key={index} item={tp} />
         ))}
       </div>
     </div>

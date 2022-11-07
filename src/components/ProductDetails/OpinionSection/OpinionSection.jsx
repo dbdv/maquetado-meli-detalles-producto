@@ -21,7 +21,7 @@ export default function OpinionSection() {
   const testReviews = [];
 
   for (let index = 0; index < 3; index++) {
-    testReviews.push(<ReviewMessage review={testReview} />);
+    testReviews.push(<ReviewMessage key={index} review={testReview} />);
   }
 
   return (

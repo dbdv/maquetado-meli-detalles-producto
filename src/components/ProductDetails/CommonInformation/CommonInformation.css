@@ -26,12 +26,19 @@
   background: white;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 
 .common-information > div > div > span {
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+.common-information > div > div > img {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .common-information > div > div > p {
