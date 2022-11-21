@@ -4,12 +4,25 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
+import { ImCross } from "react-icons/im";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
 export function Header() {
   return (
     <header className="header">
+      <div id="disclaimer" className="disclaimer">
+        <p>
+          <strong>DISCLAIMER</strong>: Esta página{" "}
+          <strong>NO ES OFICIAL</strong> y se hizo únicamente con la finalidad
+          de practicar habilidades de diseño web .
+        </p>
+        <ImCross
+          onClick={() => {
+            document.querySelector("#disclaimer").classList.add("hide");
+          }}
+        />
+      </div>
       <div className="wrapper_header">
         <div className="top_header">
           <div className="first_section">

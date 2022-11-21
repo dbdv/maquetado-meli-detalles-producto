@@ -12,6 +12,26 @@
   min-height: 100px;
 }
 
+.header > .disclaimer {
+  display: flex;
+  border-radius: 10px;
+  gap: 1rem;
+  padding: 0.3rem;
+}
+
+.header > .disclaimer > p {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.header > .disclaimer > svg {
+  font-size: 1rem;
+}
+
+.header > .disclaimer > svg:hover {
+  cursor: pointer;
+}
+
 .wrapper_header {
   width: 100%;
   max-width: var(--wrapper-width);
@@ -138,4 +158,8 @@ a > span > svg {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.hide {
+  display: none !important;
 }

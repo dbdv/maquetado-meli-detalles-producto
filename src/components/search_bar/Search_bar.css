@@ -41,4 +41,5 @@
 
 .search_icon {
   font-size: 1.2rem !important;
+  fill: var(--accent-text-color);
 }
