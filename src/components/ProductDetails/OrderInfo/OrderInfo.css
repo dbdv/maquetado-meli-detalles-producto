@@ -1,0 +1,354 @@
+.OrderInfo {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.OrderInfo > .condition-sold {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--more-info-color);
+  background: white;
+  font-size: 0.73rem;
+}
+
+.OrderInfo > .title-price {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  justify-content: space-between;
+}
+
+.OrderInfo > .title-price > div {
+  background: white;
+  max-width: 17rem;
+}
+
+.OrderInfo > .title-price > .fav-icon {
+  font-size: 1.5rem;
+}
+
+.OrderInfo > .title-price > div > h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.OrderInfo > .califications {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.OrderInfo > .califications > span {
+  font-size: 0.8rem;
+}
+
+.OrderInfo > .califications > .reviews-number {
+  color: var(--blue-tone-color);
+  font-weight: 400;
+}
+
+.OrderInfo > .position {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  background: white;
+  line-height: 1rem;
+}
+
+.OrderInfo > .position > span:first-child {
+  background: #ff7733;
+  padding: 0.2rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.OrderInfo > .position > span:nth-child(2) {
+  color: var(--blue-tone-color);
+}
+
+.OrderInfo > .price,
+.OrderInfo > .price > div {
+  background: white;
+}
+
+.OrderInfo > .price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .price > .prev-price {
+  text-decoration: line-through;
+  color: var(--more-info-text-color);
+}
+
+.OrderInfo > .price > .current-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .price > .current-price > span:first-child {
+  font-size: 2rem;
+}
+
+.OrderInfo > .price > .current-price > span:nth-child(2) {
+  color: rgb(2, 153, 2);
+}
+
+.OrderInfo > .price > p {
+  line-height: 1.2rem;
+  max-width: 17rem;
+  font-size: 1rem;
+}
+
+.OrderInfo > .price > p > .cents {
+  background: white;
+}
+
+.OrderInfo > .payment-methods {
+  background: white;
+  font-size: 0.7rem;
+}
+
+.OrderInfo > .refund-info,
+.OrderInfo > .shipping-info {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  line-height: 1.2rem;
+  gap: 1rem;
+}
+
+.OrderInfo > .refund-info > div,
+.OrderInfo > .shipping-info > div,
+sup {
+  background: white;
+}
+
+.OrderInfo > .refund-info > .icon,
+.OrderInfo > .shipping-info > .icon {
+  font-size: 1.4rem;
+}
+
+.OrderInfo > .shipping-info > .icon > svg {
+  fill: var(--accent-text-color);
+}
+.OrderInfo > .refund-info > .icon > svg {
+  fill: rgb(2, 153, 2);
+}
+
+.OrderInfo > .refund-info > div,
+.OrderInfo > .shipping-info > div {
+  font-size: 0.9rem;
+}
+
+.OrderInfo > .shipping-info > div > span > .prev-price,
+.OrderInfo > .shipping-info > div > span > .prev-price > sup {
+  text-decoration: line-through;
+  color: var(--more-info-text-color);
+}
+
+.OrderInfo > .refund-info > div > p,
+.OrderInfo > .shipping-info > div > p {
+  font-size: 0.7rem;
+  color: var(--more-info-text-color);
+}
+
+.OrderInfo > .refund-info > div > span {
+  color: rgb(2, 153, 2);
+}
+
+.OrderInfo > .shipping-info > div > p > strong {
+  background: white;
+  font-weight: 400;
+}
+
+.OrderInfo > .refund-info > div > a,
+.OrderInfo > .shipping-info > div > a {
+  font-size: 0.7rem;
+}
+
+.OrderInfo > .colors {
+  background: white;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .colors > p > span {
+  font-weight: 500;
+}
+
+.OrderInfo > .colors > .colors-prev {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+}
+
+.OrderInfo > .colors > .colors-prev > img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: scale-down;
+  border-radius: 5px;
+  border: 2px solid var(--more-info-text-color);
+  padding: 0.3rem;
+}
+
+.color-selected {
+  border: 2px solid var(--blue-tone-color) !important;
+}
+
+.OrderInfo > .stock {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.OrderInfo > .stock > .selector {
+  display: flex;
+  align-items: center;
+  background: white;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .stock > .selector > div {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .stock > .selector > div > svg {
+  background: white;
+  fill: var(--more-info-text-color);
+  transition: all 0.5s;
+}
+
+.OrderInfo > .stock > .modal-selector {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  top: 3.5rem;
+  background: white;
+}
+
+.OrderInfo > .stock > .modal-selector > span {
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.unit-selected {
+  color: var(--blue-tone-color);
+  border-left: 1px solid var(--blue-tone-color);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.OrderInfo > .buttons {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.OrderInfo > .buttons > button {
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+  border: none;
+}
+
+.OrderInfo > .buttons > button:first-child {
+  color: white;
+  background: var(--blue-tone-color);
+  transition: all 0.5s;
+}
+
+.OrderInfo > .buttons > button:first-child:hover {
+  background: rgb(71, 71, 226);
+}
+
+.OrderInfo > .buttons > button:nth-child(2) {
+  color: var(--blue-tone-color);
+  background-color: var(--second-blue-color);
+}
+
+.OrderInfo > .buttons > div {
+  background: white;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  gap: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+}
+
+.OrderInfo > .buttons > div > .truck-icon-mix {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background: white;
+}
+
+.OrderInfo > .buttons > div > .truck-icon-mix > svg {
+  fill: rgb(2, 153, 2);
+}
+
+.OrderInfo > .buttons > div > .truck-icon-mix > .circle {
+  font-size: 1.7rem;
+}
+
+.OrderInfo > .buttons > div > .truck-icon-mix > .truck {
+  position: absolute;
+  font-size: 1rem;
+  left: 0.4rem;
+  top: 0.4rem;
+}
+
+.OrderInfo > .buttons > div > p {
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.OrderInfo > .protected-purchase,
+.OrderInfo > .mercado-points {
+  background: white;
+  font-size: 0.8rem;
+  display: flex;
+  line-height: 1rem;
+  gap: 0.5rem;
+  padding: 0.1rem;
+}
+
+.OrderInfo > .protected-purchase > svg,
+.OrderInfo > .mercado-points > svg {
+  fill: var(--accent-text-color);
+}
+
+.OrderInfo > .protected-purchase > svg {
+  font-size: 1.4rem;
+}
+.OrderInfo > .mercado-points > svg {
+  font-size: 0.9rem;
+}

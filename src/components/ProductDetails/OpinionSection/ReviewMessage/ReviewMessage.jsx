@@ -1,14 +1,9 @@
 import "./ReviewMessage.css";
-import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
+import generateStars from "../../../../utils/generateStars";
 
 export default function ReviewMessage({ review }) {
-  const stars = [];
-  for (let index = 0; index < 5; index++) {
-    stars.push(
-      index < review.stars ? <BsStarFill key={index} /> : <BsStar key={index} />
-    );
-  }
+  const stars = generateStars(review.stars);
   return (
     <div className="review-message-wrapper">
       <div className="review-message">

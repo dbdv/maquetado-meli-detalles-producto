@@ -80,9 +80,7 @@ export default function OpinionSection() {
           </div>
           <div>{testReviews}</div>
           <div className="opinion-section-see-all">
-            <Link rel="stylesheet" href="">
-              Ver todas las opiniones
-            </Link>
+            <Link href="">Ver todas las opiniones</Link>
           </div>
         </div>
       </div>

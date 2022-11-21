@@ -10,6 +10,7 @@ import PromotedProducts from "../PromotedProducts/PromotedProducts";
 import CommonInformation from "../CommonInformation/CommonInformation";
 import SellerInfo from "../SellerInfo/SellerInfo";
 import MercadoShops from "../MercadoShops/MercadoShops";
+import OrderInfo from "../OrderInfo/OrderInfo";
 
 export default function ProductMainContent() {
   const images = [
@@ -59,6 +60,7 @@ export default function ProductMainContent() {
         </div>
         <div className="right">
           <aside className="aside-temp">
+            <OrderInfo />
             <SellerInfo sellerInfo={seller} />
             <CommonInformation />
             <PromotedProducts />
